@@ -1,0 +1,31 @@
+public class UFC {
+
+    public static void main(String[] args) {
+
+        // Criando um vetor com espaço para 5 lutadores
+        Lutador[] l = new Lutador[5];
+
+        // Criando os objetos Lutador
+        l[0] = new Lutador("Fabrine", "brasileira", 17, 1.60f, 70.0f, 5, 2, 0);
+        l[1] = new Lutador("Anderson", "brasileiro", 40, 1.70f, 80.0f, 7, 4, 6);
+        l[2] = new Lutador("Dead Code", "australiano", 31, 1.75f, 68.9f, 11, 2, 1);
+        l[3] = new Lutador("Nerdaocast", "americano", 35, 1.81f, 105.7f, 12, 2, 4);
+        l[4] = new Lutador("UFC", "brasileiro", 28, 1.93f, 81.6f, 13, 0, 2);
+
+        // Mostrando as informações do primeiro lutador
+        l[0].apresentar();
+
+        System.out.println();
+
+        // Mostrando o status do primeiro lutador
+        l[0].status();
+
+        // Fazendo o lutador ganhar uma luta
+        l[0].ganharLuta();
+
+        System.out.println();
+
+        // Mostrando o status novamente
+        l[0].status();
+    }
+}
